@@ -1,0 +1,38 @@
+[
+    {
+      "name": "Indo",
+      "desc": "Indo is a mini speech recognition system with many default commands",
+      "image": "speech",
+      "github": "https://github.com/pranayteaches/speech_recognition_v2.",
+      "tech": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Scrape_YT",
+      "desc": "Scrape_yt is a YouTube video and playlist downloader.",
+      "image": "yt",
+      "github": "https://github.com/pranayteaches/scrape_yt",
+      "tech": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Web map",
+      "desc": "A Web Map made with folium, that highlights the OSGeo Centres.",
+      "image": "webmap",
+      "github": "https://github.com/pranayteaches/web_map",
+      "tech": [
+        "Python, HTML, CSV"
+      ]
+    },
+    {
+        "name": "Speech To Text",
+        "desc": "This Speech To Text script was made to speed up Typing.",
+        "image": "speech_to_text",
+        "github": "https://github.com/pranayteaches/speech_to_text",
+        "tech": [
+          "Python"
+        ]
+      }
+  ]
