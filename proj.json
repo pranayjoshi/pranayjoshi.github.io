@@ -36,7 +36,7 @@
       "id" : "13"
     },
     {
-      "proj_name": "Speech To Text",
+      "proj_name": "Speech->Text",
       "description": "A Speech To Text Script",
       "long_desc" : "This Speech To Text script was made to ease and speed up Typing.",
       "proj_img": "speech_to_text",
