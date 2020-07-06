@@ -8,7 +8,7 @@ async function Proj() {
   let proj = "";
 
   proj_data.forEach(vars => {
-    const {proj_name,description,proj_img,git,lang,id} = vars;
+    const {proj_name,description,long_desc, proj_img,git,lang,id} = vars;
     proj += `
     <div class="view_box" >
 
@@ -39,7 +39,7 @@ async function Proj() {
                                     </div>
                                     <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="./assets/img/proj/${proj_img}.png" alt="${proj_name}"/>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">${description}</p>
+                                    <p class="mb-5">${long_desc}</p>
                                     <a href="${git}" style='font-size:40px;color:black;'><i class="fab fa-fw fa-github fa-2x" ></i></a>
                                 </div>
                             </div>
