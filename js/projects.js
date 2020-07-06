@@ -1,39 +1,55 @@
 (async () => {
-  const projects = document.querySelector("#projects_list");
-  projects.insertAdjacentHTML('afterbegin', await getProjects());
+  const proj = document.querySelector("#projects_list");
+  proj.insertAdjacentHTML('afterbegin', await Proj());
 })();
+async function Proj() {
+  const j_data = await fetch('./proj.json');
+  const proj_data = await j_data.json();
+  let proj = "";
 
-async function getProjects() {
-  const json = await fetch('./projects.json');
-  const projects_data = await json.json();
-  let projects = "";
+  proj_data.forEach(vars => {
+    const {proj_name,description,proj_img,git,lang,id} = vars;
+    proj += `
+    <div class="view_box" >
 
-  projects_data.forEach(project => {
-    const {
-      name,
-      desc,
-      image,
-      github,
-      tech
-    } = project;
-
-    projects += `
       <div class="project">
-          <img src="./assets/img/proj/${image}.png" alt="logo ${image}">
-          <div class="data_box">
-            <h2>${name}</h2>
-            <h3>${desc}</h3>
-            <h4>${tech.map(tech => `${tech}`).join(', ')}</h4>
+          <img src="./assets/img/proj/${proj_img}.png" alt="logo ${proj_img}" data-toggle="modal" data-target="#portfolioModal${id}">
+          <div class="data">
+            <h2>${proj_name}</h2>
+            <h3>${description}</h3>
+            <h4>${lang.map(lang => `${lang}`).join('')}</h4>
           </div>
-          <div class="preview_box">
-            <a href="${github}"><i class="fab fa-fw fa-github" ></i></a>
+          <a a class="btn btn-outline-light btn-social mx-1" href="${git}"><i class="fab fa-fw fa-github fa-2x" ></i></a>
           </div>
+          <div class="portfolio-modal modal fade" id="portfolioModal${id}" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">${proj_name}</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="./assets/img/proj/${proj_img}.png" alt="${proj_name}"/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">${description}</p>
+                                    <a href="${git}" style='font-size:40px;color:black;'><i class="fab fa-fw fa-github fa-2x" ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
           `;
-    if (github != "") {
-        projects += `<a a class="btn btn-outline-light btn-social mx-1" href="${github}"><i class="fab fa-fw fa-github fa-2x" ></i></a>`;
-    }
-    projects += "</div>";
   });
-
-  return projects;
+  return proj;
 }
