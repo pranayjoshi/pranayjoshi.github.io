@@ -7426,7 +7426,13 @@ form .row:first-child .floating-label-form-group {
   #projects>h3:not(:first-child) {
     margin-top: 15px;
   }
-  
+  #rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
   #projects_list {
     padding: 10px;
     display: flex;
@@ -7442,8 +7448,8 @@ form .row:first-child .floating-label-form-group {
   }
   
   .project {
-    background-color: var(--gray-dark);
-    border-radius: 20px;
+    background-color: #1a252f;
+    border-radius: 30px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 183px auto;
@@ -7455,8 +7461,16 @@ form .row:first-child .floating-label-form-group {
     margin-right: 20px;
     transition: background-color .3s ease-in-out;
   }
-  
-  .project>img {
+  .view_box {
+    border-radius: 25px;
+    display: table;
+    padding-top: 50px;
+    padding-left: 30px;
+    width: 100%;
+    height: 600px;
+    background: #11181f;
+  }
+  .view_box>.project>img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 183px;
@@ -7464,60 +7478,32 @@ form .row:first-child .floating-label-form-group {
     grid-area: Image;
   }
   
-  #projects_list>.project>.data_box {
+  #projects_list>.view_box>.project>.data {
     padding: 20px;
-    color: var(--secondary);
+    color: var(--white);
     grid-area: DataBox;
     transition: color .3s ease-in-out;
   }
   
-  .data_box>h2 {
+  .data>h2 {
     font-size: 29px;
     margin-bottom: 7px;
   }
   
-  .data_box>h3 {
+  .data>h3 {
     font-size: 18.5px;
-    color: var(--desc);
+    color: var(--description);
     margin-bottom: 10px;
     font-weight: 400;
     transition: color .3s ease-in-out;
   }
   
-  .data_box>h4 {
+  .data>h4 {
     font-size: 18px;
     color: var(--tech);
     font-weight: 400;
     transition: color .3s ease-in-out;
   }
-  .data_box>a>i {
+  .data>a>i {
     font-size: 40px;
-  }
-  .preview_box {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .preview_box>a {
-    color: var(--preview);
-    font-size: 0px;
-    transition: color .2s ease-in-out;
-  }
-  
-  .preview_box>a>i {
-    font-size: 40px;
-  }
-  
-  .preview_box>a:hover {
-    opacity: 0.7;
-  }
-  
-  .preview_box>#preview_button {
-    font-weight: 600;
-    font-size: 23px;
-    margin-right: 15px;
   }
