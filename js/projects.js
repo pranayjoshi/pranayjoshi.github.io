@@ -13,7 +13,7 @@ async function Proj() {
     <div class="view_box" >
 
       <div class="project">
-          <img src="./assets/img/proj/${proj_img}.png" alt="logo ${proj_img}" data-toggle="modal" data-target="#portfolioModal${id}">
+          <img src="./assets/img/proj/${proj_img}.webp" alt="logo ${proj_img}" data-toggle="modal" data-target="#portfolioModal${id}">
           <div class="data">
             <h2>${proj_name}</h2>
             <h3>${description}</h3>
@@ -37,7 +37,7 @@ async function Proj() {
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="./assets/img/proj/${proj_img}.png" alt="${proj_name}"/>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="./assets/img/proj/${proj_img}.webp" alt="${proj_name}"/>
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5">${long_desc}</p>
                                     <a href="${git}" style='font-size:40px;color:black;'><i class="fab fa-fw fa-github fa-2x" ></i></a>
