@@ -4,7 +4,7 @@
       "description": "A Mini speech recognizer",
       "long_desc" : "Indo is a mini speech recognition system with many default commands.",
       "proj_img": "speech",
-      "git": "https://github.com/pranayteaches/Speech_recogintion",
+      "git": "https://github.com/pranayteaches/Speech_recognition",
       "lang": [
         "<i class='fab fa-fw fa-python' aria-hidden='true' style='font-size:40px;color:white;'></i>"
       ],
