@@ -3,13 +3,7 @@
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 
- @font-face {
-	font-family: FontAwesome;
-	src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
-	src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
-	font-weight: 400;
-	font-style: normal
-}
+
 
 .fa {
 	display: inline-block;
@@ -18,12 +12,6 @@
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale
-}
-
-.fa-lg {
-	font-size: 1.33333333em;
-	line-height: .75em;
-	vertical-align: -15%
 }
 
 .fa-2x {
@@ -38,13 +26,13 @@
 	font-size: 4em
 }
 
-.fa-5x {
-	font-size: 5em
-}
-
 .fa-fw {
 	width: 1.28571429em;
 	text-align: center
+}
+/*
+.fa-5x {
+	font-size: 5em
 }
 
 .fa-ul {
@@ -69,6 +57,21 @@
 	left: -1.85714286em
 }
 
+.fa-lg {
+	font-size: 1.33333333em;
+	line-height: .75em;
+	vertical-align: -15%
+}
+*/
+/*
+@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
+    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
 @-webkit-keyframes fa-spin {
 	0% {
 		-webkit-transform: rotate(0);
@@ -90,20 +93,52 @@
 		transform: rotate(359deg)
 	}
 }
-
+*/
 .fa-star:before {
 	content: "\f005"
-}
-
-.fa-close:before,
-.fa-times:before {
-	content: "\f00d"
 }
 
 .fa-download:before {
 	content: "\f019"
 }
 
+.fa-plus:before {
+	content: "\f067"
+}
+
+.fa-chevron-up:before {
+	content: "\f077"
+}
+
+.fa-twitter:before {
+	content: "\f099"
+}
+
+.fa-github:before {
+	content: "\f09b"
+}
+
+.fa-envelope:before {
+	content: "\f0e0"
+}
+
+.fa-html5:before {
+	content: "\f13b"
+}
+
+.fa-youtube:before {
+	content: "\f167"
+}
+
+.fa-bars:before {
+	content: "\f0c9"
+}
+
+.fa-close:before,
+.fa-times:before {
+	content: "\f00d"
+}
+/*
 .fa-list-alt:before {
 	content: "\f022"
 }
@@ -141,6 +176,9 @@
 	content: "\f03e"
 }
 
+.fa-phone:before {
+	content: "\f095"
+}
 .fa-chevron-right:before {
 	content: "\f054"
 }
@@ -149,40 +187,17 @@
 	content: "\f065"
 }
 
-.fa-plus:before {
-	content: "\f067"
-}
-
 .fa-plane:before {
 	content: "\f072"
 }
 
-.fa-chevron-up:before {
-	content: "\f077"
-}
 
 .fa-trophy:before {
 	content: "\f091"
 }
 
-.fa-phone:before {
-	content: "\f095"
-}
-
-.fa-twitter:before {
-	content: "\f099"
-}
-
-.fa-github:before {
-	content: "\f09b"
-}
-
 .fa-link:before {
 	content: "\f0c1"
-}
-
-.fa-bars:before {
-	content: "\f0c9"
 }
 
 .fa-list-ul:before {
@@ -191,10 +206,6 @@
 
 .fa-google-plus:before {
 	content: "\f0d5"
-}
-
-.fa-envelope:before {
-	content: "\f0e0"
 }
 
 .fa-linkedin:before {
@@ -214,10 +225,6 @@
 	content: "\f121"
 }
 
-.fa-html5:before {
-	content: "\f13b"
-}
-
 .fa-css3:before {
 	content: "\f13c"
 }
@@ -234,9 +241,7 @@
 	content: "\f159"
 }
 
-.fa-youtube:before {
-	content: "\f167"
-}
+
 
 .fa-google:before {
 	content: "\f1a0"
@@ -286,7 +291,7 @@
 .fa-telegram:before {
 	content: "\f2c6"
 }
-
+*/
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -10655,4 +10660,19 @@ form .row:first-child .floating-label-form-group {
     height: 100%;
     width:100%;
     position:absolute;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 20px;
 }
