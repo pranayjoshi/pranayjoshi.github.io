@@ -4,7 +4,7 @@
       "description": "A Mini speech recognizer",
       "long_desc" : "Indo is a mini speech recognition system with many default commands.",
       "proj_img": "speech",
-      "git": "https://github.com/pranayteaches/Speech_recognition",
+      "git": "https://github.com/pranayjoshi/Speech_recognition",
       "lang": [
         "<i class='fab fa-fw fa-python' aria-hidden='true' style='font-size:40px;color:white;'></i>"
       ],
@@ -15,7 +15,7 @@
       "description": "YouTube vid downloader",
       "long_desc" : "Scrape_yt is a YouTube video and playlist downloader.",
       "proj_img": "yt",
-      "git": "https://github.com/pranayteaches/scrape_yt",
+      "git": "https://github.com/pranayjoshi/scrape_yt",
       "lang": [
         "<i class='fab fa-fw fa-python' aria-hidden='true' style='font-size:40px;color:white;'></i>"
       ],
@@ -26,7 +26,7 @@
       "description": "A Cool Web Map ",
       "long_desc" : "A Web Map made with folium, that highlights the OSGeo Centres.",
       "proj_img": "webmap",
-      "git": "https://github.com/pranayteaches/web_map",
+      "git": "https://github.com/pranayjoshi/web_map",
       "lang": [
          
          "<i class='fab fa-fw fa-python' aria-hidden='true' style='font-size:40px;color:white;'></i>",
@@ -40,7 +40,7 @@
       "description": "A Speech To Text Script",
       "long_desc" : "This Speech To Text script was made to ease and speed up Typing.",
       "proj_img": "speech_to_text",
-      "git": "https://github.com/pranayteaches/speech_to_text",
+      "git": "https://github.com/pranayjoshi/speech_to_text",
       "lang": [
         "<i class='fab fa-fw fa-python' aria-hidden='true' style='font-size:40px;color:white;'></i>"
         ],
