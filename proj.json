@@ -2,7 +2,7 @@
     {
       "proj_name": "Indo",
       "description": "A Mini speech recognizer",
-      "long_desc" : "Indo is a mini speech recognition system with many default commands.",
+      "long_desc" : "Indo is a mini speech recognition system with many default commands. it uses the popular google's api to do so.",
       "proj_img": "speech",
       "git": "https://github.com/pranayjoshi/Speech_recognition",
       "lang": [
@@ -10,6 +10,30 @@
       ],
       "id" : "11"
     },
+    {
+      "proj_name": "Medico",
+      "description": "A Medical term detectior",
+      "long_desc" : "Medico is a tool used to detect medical terms in a Voice Conversation.",
+      "proj_img": "medico_rect",
+      "git": "https://github.com/pranayjoshi/Medico",
+      "lang": [
+        "<i class='fab fa-fw fa-python' aria-hidden='true' style='font-size:40px;color:white;'></i>",
+        "<i class='fas fa-terminal' aria-hidden='true' style='font-size:35px;color:white;'></i>",
+        "<i class='fas fa-book-open' aria-hidden='true' style='font-size:35px;color:white;'></i>"
+      ],
+      "id" : "12"
+    },
+    {
+      "proj_name": "Speech->Text",
+      "description": "A Speech To Text Script",
+      "long_desc" : "This Speech To Text script was made to ease and speed up Typing.",
+      "proj_img": "speech_to_text",
+      "git": "https://github.com/pranayjoshi/speech_to_text",
+      "lang": [
+        "<i class='fab fa-fw fa-python' aria-hidden='true' style='font-size:40px;color:white;'></i>"
+        ],
+      "id" : "14"
+      },
     {
       "proj_name": "Scrape_YT",
       "description": "YouTube vid downloader",
@@ -34,16 +58,6 @@
          "<i class='fa fa-file' aria-hidden='true' style='font-size:40px;'></i>"
       ],
       "id" : "13"
-    },
-    {
-      "proj_name": "Speech->Text",
-      "description": "A Speech To Text Script",
-      "long_desc" : "This Speech To Text script was made to ease and speed up Typing.",
-      "proj_img": "speech_to_text",
-      "git": "https://github.com/pranayjoshi/speech_to_text",
-      "lang": [
-        "<i class='fab fa-fw fa-python' aria-hidden='true' style='font-size:40px;color:white;'></i>"
-        ],
-      "id" : "14"
-      }
+    }
+    
   ]
