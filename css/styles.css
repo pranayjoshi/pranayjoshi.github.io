@@ -10586,18 +10586,21 @@ form .row:first-child .floating-label-form-group {
 }
 
 .project {
-	background-color: #1a252f;
+	background-color: #ffffff;
 	border-radius: 30px;
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: 183px auto;
 	grid-template-areas: "Image""DataBox";
 	width: 260px;
-	height: 400px;
+	height: 420px;
 	position: relative;
-	box-shadow: 0px 0px 2px rgba(132, 132, 132, 0.56);
-	margin-right: 20px;
+	box-shadow: 5px 5px 5px rgba(132, 132, 132, 5.56);
+  margin-right: 20px;
 	transition: background-color .3s ease-in-out;
+}
+.project-last {
+  padding-left: 5px;
 }
 
 .view_box {
@@ -10607,10 +10610,10 @@ form .row:first-child .floating-label-form-group {
 	padding-left: 30px;
 	width: 100%;
 	height: 500px;
-	background: #121416;
+	background: #5b5b5c;
 }
 
-.view_box>.project>img {
+.project>img {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	height: 183px;
@@ -10618,27 +10621,29 @@ form .row:first-child .floating-label-form-group {
 	grid-area: Image;
 }
 
-#projects_list>.view_box>.project>.data {
-	padding: 20px;
-	color: var(--white);
+#projects_list>.project>.data {
+	color: var(--primary);
 	grid-area: DataBox;
 	transition: color .3s ease-in-out;
 }
 
 .data>h2 {
+  padding-left: 5px;
 	font-size: 29px;
 	margin-bottom: 7px;
 }
 
 .data>h3 {
+  padding-left: 5px;
 	font-size: 18.5px;
 	color: var(--description);
 	margin-bottom: 10px;
 	font-weight: 400;
 	transition: color .3s ease-in-out;
 }
-
+modal-dialog modal-xl
 .data>h4 {
+  padding-left: 5px;
 	font-size: 18px;
 	color: var(--tech);
 	font-weight: 400;
@@ -10646,6 +10651,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .data>a>i {
+  padding-left: 5px;
 	font-size: 40px;
 }
 .video-responsive{
@@ -10662,17 +10668,25 @@ form .row:first-child .floating-label-form-group {
     position:absolute;
 }
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 1px grey;
   border-radius: 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--primary);
-  border-radius: 20px;
+  border-radius: 5px;
+}
+
+.fa-github{
+  color: black;
+}
+
+.fa-github:hover {
+  color: var(--primary);
 }
