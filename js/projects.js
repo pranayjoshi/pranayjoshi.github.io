@@ -10,8 +10,7 @@ async function Proj() {
   proj_data.forEach(vars => {
     const {proj_name,description,long_desc, proj_img,git,lang,id} = vars;
     proj += `
-    <div class="view_box" >
-
+    
       <div class="project">
           <img src="./assets/img/proj/${proj_img}.webp" alt="logo ${proj_img}" data-toggle="modal" data-target="#portfolioModal${id}">
           <div class="data">
@@ -41,16 +40,17 @@ async function Proj() {
                                 <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="./assets/img/proj/${proj_img}.webp" alt="${proj_name}"/>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">${long_desc}</p>
-                                <a href="${git}" style='font-size:40px;color:black;'><i class="fab fa-fw fa-github fa-2x" ></i></a>
+                                <a href="${git}" ><i class="fab fa-fw fa-github fa-2x" style='font-size:40px;color:primary;'></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
+      
     </div>`
         proj += `${load_more}`
   });
+  proj += `<div class="project-last"></div>`
   return proj;
 }
