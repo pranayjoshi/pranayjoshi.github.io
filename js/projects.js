@@ -11,14 +11,14 @@ async function Proj() {
     const {proj_name,description,long_desc, proj_img,git,lang,id} = vars;
     proj += `
     
-      <div class="project">
+      <div class="project ">
           <img src="./assets/img/proj/${proj_img}.webp" alt="logo ${proj_img}" data-toggle="modal" data-target="#portfolioModal${id}">
-          <div class="data">
+          <div class="data text-secondary">
             <h2>${proj_name}</h2>
             <h3>${description}</h3>
             <h4>${lang.map(lang => `${lang}`).join('')}</h4>
           </div>
-          <a a class="btn btn-outline-light btn-social mx-1" href="${git}"><i class="fab fa-fw fa-github fa-2x" ></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="${git}"><i class="fab fa-fw fa-github fa-2x" style="color:black" ></i></a>
           </div>
           `;
         var load_more = `<div class="portfolio-modal modal fade" id="portfolioModal${id}" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
@@ -40,7 +40,7 @@ async function Proj() {
                                 <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="./assets/img/proj/${proj_img}.webp" alt="${proj_name}"/>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-5">${long_desc}</p>
-                                <a href="${git}" ><i class="fab fa-fw fa-github fa-2x" style='font-size:40px;color:primary;'></i></a>
+                                <a href="${git}" ><i class="fab fa-fw fa-github fa-2x text-secondary" style='font-size:40px;'></i></a>
                             </div>
                         </div>
                     </div>
