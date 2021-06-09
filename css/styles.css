@@ -10535,7 +10535,7 @@ h3 {
   color: var(--primary);
 }
 
-form .row:first-child .floating-label-form-group {
+.form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e9ecef;
 }
 
