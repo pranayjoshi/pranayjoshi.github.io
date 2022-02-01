@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply font-bold px-4 py-2 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-600;
+}
+
+.card-gr-bg {
+    @apply z-0 inset-0 bg-gradient-to-r
+    from-purple-400 to-pink-500 shadow-lg transform
+    -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-lg;
+}
