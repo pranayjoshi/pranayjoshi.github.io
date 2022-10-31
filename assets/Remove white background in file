@@ -1,0 +1,11 @@
+<div class="flex">
+  <div>
+    <h2>Image with white background</h2>
+      <img src="https://lever-client-logos.s3.amazonaws.com/6b17474a-d642-400b-90c8-a83f54bf1901-1569347597723.png"/>
+   <div>
+     
+      <div>
+    <h2>Image without white background</h2>
+      <img src="https://lever-client-logos.s3.amazonaws.com/6b17474a-d642-400b-90c8-a83f54bf1901-1569347597723.png" class="hide-bg"/>
+   <div>
+</div>
