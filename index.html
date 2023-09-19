@@ -7,18 +7,33 @@
     <!-- <script src="promises_Async_Await.js"></script> -->
     <link rel="stylesheet" href="dist/style.css">
     <link rel="stylesheet" href="src/style2.css">
-    <link rel="shortcut icon" href="assets/1.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/pfp1.jpeg" type="image/x-icon">
     <title>Pranay Joshi</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="text-gray-600 antialiased">
+    <nav class=" text-pink-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-semibold text-purple-400">Pranay Joshi </a>
+
+            <!-- Navigation Links -->
+            <ul class="flex space-x-12 text-lg font-semibold capitalize">
+                <li><a href="#About" class="hover:to-pink-600 capitalize">ABOUT</a></li>
+                <li><a href="#Achievements" class="hover:to-pink-600 capitalize">PROJECTS</a></li>
+                <li><a href="#Achievements" class="hover:to-pink-600 capitalize">ACHIEVEMENTS</a></li>
+                <li><a href="#Achievements" class="hover:to-pink-600 capitalize">SKILLS</a></li>
+                <li><a href="#" class="bg-gradient-to-r capitalize px-6 py-3 text-white hover:text-gray-400 from-purple-400 via-pink-500 to-pink-600 rounded-lg">RESUME</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="absolute w-full min-h-screen">
         <div class="absolute z-0 top-0 w-full h-1/2 bg-cover bg-bottom text-white text-center"
         style="background-image: url('assets/banner-light.jpg');">
         </div>
     </div>
-    <section class="min-h-screen">
+    <section class="">
         <div class="flex justify-center items-center m-2" style="height: 82vh;">
             <div class="relative">
                 <div 
@@ -39,7 +54,7 @@
                             <a href="#"><ion-icon name="logo-github"></ion-icon></a>
                         </div>
                     </div>
-                    <img src="assets/1.jpeg" alt="Profile" class="w-80 rounded-full pt-4 pl-2 border-8 border-gray-100 shadow-lg bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex-shrink-0">
+                    <img src="assets/pfp1.jpeg" alt="Profile" class="w-80 rounded-full pt-4 pl-2 border-8 border-gray-100 shadow-lg bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex-shrink-0">
                 </div>
             </div>
         </div>
@@ -60,9 +75,9 @@
             </div>
             
         </div>
-        <div class="h-6 absolute w-full bottom-0 " style="background-color:#9233ea;"></div>
-        <div class="w-full text-center">
-            <a class="mt-20 center-con h-12" href="#i">
+        <div class="h-6 absolute w-full bottom-0" style="background-color:#9233ea;"></div>
+        <div class="w-full text-center bottom-8">
+            <a class="center-con h-12 bottom-12" href="#experience">
                 <div class="round">
                     <span></span>
                     <span></span>
@@ -75,7 +90,7 @@
         
     </section>
     
-    <section class="bg-gray-50 pt-20 pb-28 px-8" id="i">
+    <section class="bg-gray-50 pt-20 pb-28 px-8" id="experience">
         <div class="max-w-7xl mx-auto">
             <div class="text-center  font-bold">
                 <h2 class="text-5xl text-gray-800"> Experience & Projects </h2>
@@ -108,8 +123,8 @@
             </div>
         </div>
     </section>
-    <section class="pt-20 pb-28 px-8 bg-gradient-to-r
-    from-purple-400 to-pink-500 shadow-lg transform text-white">
+    <section id="Achievements" class="pt-20 pb-28 px-8 bg-gradient-to-r
+    from-purple-400 to-pink-500 shadow-lg transform text-white" id="Achievements">
         <div class="max-w-7xl mx-auto">
             <div class="text-center  font-bold">
                 <h2 class="text-5xl"> Achievements </h2>
@@ -133,10 +148,10 @@
             </div>
         </div>
     </section>
-    <section class="bg-gray-100 pt-20 pb-28 px-8">
+    <section class="bg-gray-100 pt-20 pb-28 px-8" id="skills">
         <div class="max-w-7xl mx-auto">
             <div class="text-center  font-bold">
-                <h2 class="text-4xl text-gray-800"> Expertise/Skills</h2>
+                <h2 class="text-4xl text-gray-800"> Skills</h2>
             </div>
         </div>
         <div class="mt-24 lg:mx-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
